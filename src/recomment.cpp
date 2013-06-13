@@ -14,7 +14,7 @@
 #include <QRegExp>
 #include <QFlags>
 
-static const QString dbPath = "app/native/res/db/gh/";
+static const QString dbPath = "app/native/res/db/";
 static const QString modelName = "Modell";
 static const QString manufacturerName = "Hersteller";
 //static const QString modelName = "Model";

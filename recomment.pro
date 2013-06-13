@@ -2,11 +2,12 @@ TEMPLATE = app
 TARGET = Recomment
 DEPENDPATH += .
 
+BBSIMONECOMMONIPATH = /home/bedahr/Daten/simon/src/tools/Simone/BlackBerry/BBSimoneShared
 blackberry {
 BBSIMONECOMMONPATH = ../build-BBSimoneShared-Qt_4_8_3_prefix-Release
 }
 unix:!blackberry {
-BBSIMONECOMMONPATH = ../build-BBSimoneShared-Desktop-Debug
+BBSIMONECOMMONPATH = /home/bedahr/Daten/simon/src/tools/Simone/BlackBerry/build-BBSimoneShared-Desktop-Debug
 }
 
 QT += declarative xml mobility
@@ -94,5 +95,5 @@ HEADERS += \
     src/attributecreators.h
 
 
-INCLUDEPATH += ../BBSimoneShared
+INCLUDEPATH += ../BBSimoneShared $${BBSIMONECOMMONIPATH}
 LIBS += -L$${BBSIMONECOMMONPATH} -lSimoneShared

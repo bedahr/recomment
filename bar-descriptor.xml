@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<qnx xmlns="http://www.qnx.com/schemas/application/1.0">
+    <id>at.tugraz.Recomment</id>
+    <name>Recomment</name>
+    <versionNumber>1.0.0</versionNumber>
+    <buildId>1</buildId>
+    <description>A voice controlled critiquing recommender</description>
+    <author>Peter Grasch</author>
+    <authorId>gYAAgIhOjIzhAdiq3suSau8Kg0Q</authorId>
+    <category>core.media</category>
+    <initialWindow>
+        <autoOrients>true</autoOrients>
+        <systemChrome>none</systemChrome>
+        <transparent>true</transparent>
+    </initialWindow>
+    <asset path="/home/bedahr/Daten/Projects/bb/Recomment/recomment86.png">recomment86.png</asset>
+    <configuration id="com.qnx.qcc.configuration.exe.debug.1948261609" name="Device-Debug">
+        <platformArchitecture>armle-v7</platformArchitecture>
+        <asset path="/home/bedahr/Apps/bbndk-2.1.0/qt/plugins/platforms/libblackberry.so" type="Qnx/Elf">lib/platforms/libblackberry.so</asset>
+        <asset path="/home/bedahr/Apps/bbndk-2.1.0/qt/lib/libQtCore.so" type="Qnx/Elf">lib/libQtCore.so.4</asset>
+        <asset path="/home/bedahr/Apps/bbndk-2.1.0/qt/lib/libQtGui.so" type="Qnx/Elf">lib/libQtGui.so.4</asset>
+        <asset path="/home/bedahr/Apps/bbndk-2.1.0/qt/lib/libQtSvg.so" type="Qnx/Elf">lib/libQtSvg.so.4</asset>
+        <asset path="/home/bedahr/Apps/bbndk-2.1.0/qt/lib/libQtOpenGL.so" type="Qnx/Elf">lib/libQtOpenGL.so.4</asset>
+        <asset path="/home/bedahr/Apps/bbndk-2.1.0/qt/lib/libQtDeclarative.so" type="Qnx/Elf">lib/libQtDeclarative.so.4</asset>
+        <asset path="/home/bedahr/Apps/bbndk-2.1.0/qt/prefix/lib/libQtMultimedia.so.4" type="Qnx/Elf">lib/libQtMultimedia.so.4</asset>
+        <asset path="/home/bedahr/Apps/bbndk-2.1.0/qt/lib/libQtOpenGL.so" type="Qnx/Elf">lib/libQtOpenGL.so.4</asset>
+        <asset path="Device-Debug/Recomment" type="Qnx/Elf" entry="true">Recomment</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.release.1741657270" name="Device-Release">
+        <platformArchitecture>armle-v7</platformArchitecture>
+        <asset path="Device-Release/Recomment" type="Qnx/Elf" entry="true">Recomment</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.profile.1335654710" name="Device-Profile">
+        <platformArchitecture>armle-v7</platformArchitecture>
+        <asset path="Device-Profile/Recomment" type="Qnx/Elf" entry="true">Recomment</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.profile.coverage.1541764931" name="Device-Coverage">
+        <platformArchitecture>armle-v7</platformArchitecture>
+        <asset path="Device-Coverage/Recomment" type="Qnx/Elf" entry="true">Recomment</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.debug.190788030" name="Simulator-Debug">
+        <platformArchitecture>x86</platformArchitecture>
+        <asset path="Simulator-Debug/Recomment" type="Qnx/Elf" entry="true">Recomment</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.profile.2021860979" name="Simulator-Profile">
+        <platformArchitecture>x86</platformArchitecture>
+        <asset path="Simulator-Profile/Recomment" type="Qnx/Elf" entry="true">Recomment</asset>
+    </configuration>
+    <configuration id="com.qnx.qcc.configuration.exe.profile.coverage.1581611422" name="Simulator-Coverage">
+        <platformArchitecture>x86</platformArchitecture>
+        <asset path="Simulator-Coverage/Recomment" type="Qnx/Elf" entry="true">Recomment</asset>
+    </configuration>
+    <!-- Request permission to execute native code.  Required for native applications. -->
+    <action system="true">run_native</action>
+    <action>record_audio</action>
+    <!--<action>play_audio</action>
+    <action>set_audio_volume</action> 
+    <action>access_shared</action>
+    <action>read_device_identifying_information</action>-->
+    <!--  The permissions requested by your application. -->
+    <!--  <action>access_shared</action> -->
+    <!--  <action>record_audio</action> -->
+    <!--  <action>read_geolocation</action> -->
+    <!--  <action>use_camera</action> -->
+    <!--  <action>access_internet</action> -->
+    <!--  <action>play_audio</action> -->
+    <!--  <action>post_notification</action> -->
+    <!--  <action>set_audio_volume</action> -->
+    <!--  <action>read_device_identifying_information</action> -->
+    <!-- Ensure that shared libraries in the package are found at run-time. -->
+    <env value="app/native/lib" var="LD_LIBRARY_PATH"/>
+    <!--
+    In case QtCreator starts to delete this again:
+    <icon>
+        <image>res/recomment86.png</image>
+    </icon>
+    -->
+    <icon>
+        <image>res/recomment86.png</image>
+    </icon>
+</qnx>
